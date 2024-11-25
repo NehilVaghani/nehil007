@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+
+  <!-- Link to Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Fonts for modern typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Favicon (Optional) -->
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body style="font-family: 'Poppins', sans-serif; background-color: #f4f7f8;">
+  <div class="container-fluid">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">To-Do List</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="add-task.html">Add Task</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center text-white py-5">
+      <div class="container">
+        <h1 class="display-3">Manage Your Tasks with Ease</h1>
+        <p class="lead">Stay organized and increase productivity with our intuitive To-Do List App.</p>
+        <a href="add-task.html" class="btn btn-primary btn-lg">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Task List Section -->
+    <section class="tasks py-5">
+      <div class="container">
+        <h2 class="mb-4 text-center">Your Tasks</h2>
+        <div id="task-list" class="row">
+          <!-- Tasks will be dynamically inserted here by JavaScript -->
+        </div>
+        <div class="text-center mt-4">
+          <a href="add-task.html" class="btn btn-secondary">Add New Task</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 mt-5" style="background-color: #343a40; color: black;">
+      <p>&copy; 2024 To-Do List App | All Rights Reserved</p>
+    </footer>
+  </div>
+
+  <!-- Bootstrap 5 JS and Dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+  <!-- jQuery (for task handling) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
